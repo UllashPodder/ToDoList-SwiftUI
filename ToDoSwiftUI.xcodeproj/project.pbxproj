@@ -17,7 +17,6 @@
 		3E662CCF2A9B7BF10023BDFB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3E662CCE2A9B7BF10023BDFB /* FirebaseAuth */; };
 		3E662CD12A9B7BF10023BDFB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3E662CD02A9B7BF10023BDFB /* FirebaseFirestore */; };
 		3E662CD32A9B7BF10023BDFB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3E662CD22A9B7BF10023BDFB /* FirebaseFirestoreSwift */; };
-		3E662CD52AC9F57F0023BDFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E662CD42AC9F57E0023BDFB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		3E662CBA2A9B5FE70023BDFB /* ToDoSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E662CBE2A9B5FE70023BDFB /* ToDoSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3E662CC02A9B5FE70023BDFB /* ToDoSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3E662CD42AC9F57E0023BDFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +161,6 @@
 			children = (
 				3E662CA32A9B5FE60023BDFB /* ToDoSwiftUIApp.swift */,
 				3E662CA72A9B5FE70023BDFB /* Assets.xcassets */,
-				3E662CD42AC9F57E0023BDFB /* GoogleService-Info.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			files = (
 				3E662CAB2A9B5FE70023BDFB /* Preview Assets.xcassets in Resources */,
 				3E662CA82A9B5FE70023BDFB /* Assets.xcassets in Resources */,
-				3E662CD52AC9F57F0023BDFB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
