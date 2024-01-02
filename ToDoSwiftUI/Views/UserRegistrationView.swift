@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct UserRegistrationView: View {
+    @StateObject var viewModel = UserRegistrationViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HeaderView(title: "Register", subtitle: "Let's get started", rotationAngle: -15, foregroundColor: .orange)
+            Form{
+                if(!viewModel.errorMessage.isEmpty){
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(.red)
+                        .font(.system(size: 12))
+                }
+                TextField("Name", text: $viewModel.name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                TextField("Email", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.never)
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                BaseButton(title: "Creat Account", backgroundColor: .green) {
+                    viewModel.registerUser()
+                }
+            }
+            .offset(y:-50)
+            
+            Spacer()
+        }
     }
 }
 

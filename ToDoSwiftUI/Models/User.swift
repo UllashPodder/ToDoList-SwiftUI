@@ -6,3 +6,10 @@
 //
 
 import Foundation
+struct User:Codable{
+    let id:String
+    let name: String
+    let email: String
+    let created : TimeInterval
+    let updated : TimeInterval
+}
